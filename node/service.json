@@ -16,7 +16,7 @@
     },
     "composition": {
       "path": "/v1/compositionFile",
-      "public": true
+      "public": false
     }
   }
 }

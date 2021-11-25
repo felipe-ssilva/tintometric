@@ -52,8 +52,6 @@ export const mutations = {
       const csvData = parseBuffer(csvFile)
       const csv = parseCSVToJson(csvData)
 
-      // TODO: ver por qué cuando no hay un csv_old cargado rompe y corta la ejecucion
-
       const oldCsvData = await vbase.getJSON<string>('tintometric', 'csv_old')
 
       if (oldCsvData.status !== 404) {
